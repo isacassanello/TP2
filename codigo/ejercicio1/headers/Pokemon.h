@@ -1,0 +1,27 @@
+#pragma once
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Pokemon{
+    private:
+        string nombre;
+        int experiencia;
+
+    public:
+        Pokemon(const string& n, int e);
+
+        // getters
+        string getNombre() const;
+        int getExperiencia();
+
+        // Sobrecarga para comparar en unordered_map
+        bool operator==(const Pokemon& other) const;
+
+        void imprimirPokemon();
+
+        ~Pokemon() = default;
+};
+
+// Cuando usás un std::unordered_map, el compilador necesita una función hash para calcular en qué casillero de la tabla colocar cada clave.
+// entonces necesitás #include <functional> porque std::hash está definido ahí.
