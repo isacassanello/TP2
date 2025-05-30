@@ -26,10 +26,10 @@ class Pokedex{
     public:
         // metodo para agregar un pokemon al pokedex
         void agregarPokemon(const Pokemon& p, const PokemonInfo& info);
-        
-        void mostrar(const Pokemon& p);
 
         void mostrarTodos();
+        
+        void mostrar(const Pokemon& p);
 
         ~Pokedex() = default;
 };
