@@ -1,6 +1,5 @@
 #include "../headers/Pokemon.h"
 
-
 Pokemon::Pokemon(const std::string& n, int e) : nombre(n), experiencia(e) {}
 
 string Pokemon::getNombre() const { return nombre; }
