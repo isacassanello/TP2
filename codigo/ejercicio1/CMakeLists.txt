@@ -1,11 +1,10 @@
-# Definir la version de CMake a utilizar
 cmake_minimum_required(VERSION 3.10)
 
 project(pokedex) # Nombre del proyecto
 
 set(CMAKE_CXX_STANDARD 17)
 
-file(GLOB SOURCES "../sources/* ../examples/main.cpp")
+file(GLOB SOURCES ../sources/* ../examples/main.cpp)
 
 add_executable(main ${SOURCES})
 
