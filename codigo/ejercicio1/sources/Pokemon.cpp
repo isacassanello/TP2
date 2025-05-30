@@ -4,7 +4,7 @@ Pokemon::Pokemon(const std::string& n, int e) : nombre(n), experiencia(e) {}
 
 string Pokemon::getNombre() const { return nombre; }
 
-int Pokemon::getExperiencia() { return experiencia; }
+int Pokemon::getExperiencia() const { return experiencia; }
 
 bool Pokemon::operator==(const Pokemon& other) const {
     return nombre == other.nombre; // solo comparamos por nombre como dice el enunciado

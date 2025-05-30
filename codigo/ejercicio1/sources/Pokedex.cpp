@@ -8,17 +8,18 @@ void Pokedex::mostrarTodos(){
     if (pokedex.empty()) {
         cout << "El pokedex esta vacio";
     }
-
     for (auto& poke : pokedex){
-        poke.second.imprimirPokemonInfo();
+        cout << "------------------------" << endl;
+        poke.second.imprimirPokemonInfo(poke.first.getNombre(), poke.first.getExperiencia());
     }
+    cout << "------------------------" << endl;
 }
 
 void Pokedex::mostrar(const Pokemon& p){
     auto aBuscar = pokedex.find(p);
     if (aBuscar != pokedex.end()){
         cout << "Informacion de " << p.getNombre() << ": " << endl;
-        aBuscar->second.imprimirPokemonInfo();
+        aBuscar->second.imprimirPokemonInfo(p.getNombre(), p.getExperiencia());
     } else {
         cout << "¡Pokemon desconocido!" << endl;
     }

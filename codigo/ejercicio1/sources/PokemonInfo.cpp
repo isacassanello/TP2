@@ -11,7 +11,9 @@ map<string, int> PokemonInfo::getAtaques() { return ataquesDisponiblesPorNivel; 
 
 array<int, 3> PokemonInfo::getExperiencia() { return experienciaProximoNivel; }
 
-void PokemonInfo::imprimirPokemonInfo(){
+void PokemonInfo::imprimirPokemonInfo(const string& nombrePokemon, int experiencia){
+    cout << "Nombre: " << nombrePokemon << endl;
+    cout << "Experiencia: " << experiencia << endl;
     cout << "Tipo: " << tipoPokemon << endl;
     cout << "Descripcion: " << descripcion << endl;
 

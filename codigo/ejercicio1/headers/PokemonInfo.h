@@ -3,6 +3,7 @@
 #include <string>
 #include <array>
 #include <map>
+#include "Pokemon.h"
 using namespace std;
 
 class PokemonInfo{
@@ -26,7 +27,7 @@ class PokemonInfo{
         map<string, int> getAtaques();
         array<int, 3> getExperiencia();
 
-        void imprimirPokemonInfo();
+        void imprimirPokemonInfo(const string& nombrePokemon, int experiencia);
 
         ~PokemonInfo() = default;
 };

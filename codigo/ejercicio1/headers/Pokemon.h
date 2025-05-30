@@ -14,7 +14,7 @@ class Pokemon{
 
         // getters
         string getNombre() const;
-        int getExperiencia();
+        int getExperiencia()const;
 
         // Sobrecarga para comparar en unordered_map
         bool operator==(const Pokemon& other) const;
