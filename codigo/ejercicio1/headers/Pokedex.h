@@ -29,7 +29,6 @@ class Pokedex{
         
         void mostrar(const Pokemon& p);
 
-        void mostrarTodos();
 
         ~Pokedex() = default;
 };
