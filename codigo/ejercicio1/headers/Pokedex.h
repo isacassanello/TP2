@@ -25,6 +25,7 @@ class Pokedex{
     
     public:
         Pokedex() = default;
+
         // metodo para agregar un pokemon al pokedex
         void agregarPokemon(const Pokemon& p, const PokemonInfo& info);
 
