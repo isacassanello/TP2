@@ -29,5 +29,8 @@ class PokemonInfo{
 
         void imprimirPokemonInfo(const string& nombrePokemon, int experiencia);
 
+        void serializar(ofstream& out);
+        void deserializar(ifstream& in);
+
         ~PokemonInfo() = default;
 };

@@ -33,5 +33,8 @@ class Pokedex{
         
         void mostrar(const Pokemon& p);
 
+        void serializar(ofstream& out);
+        void deserializar(ifstream& in);
+
         ~Pokedex() = default;
 };

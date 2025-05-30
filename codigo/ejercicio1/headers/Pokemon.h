@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <fstream>
 using namespace std;
 
 class Pokemon{
@@ -20,6 +21,9 @@ class Pokemon{
         bool operator==(const Pokemon& other) const;
 
         void imprimirPokemon();
+
+        void serializar(ofstream& out);
+        void deserializar(ifstream& in);
 
         ~Pokemon() = default;
 };
