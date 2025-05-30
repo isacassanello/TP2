@@ -4,7 +4,7 @@ project(pokedex) # Nombre del proyecto
 
 set(CMAKE_CXX_STANDARD 17)
 
-file(GLOB SOURCES ../sources/* ../examples/main.cpp)
+file(GLOB SOURCES sources/* examples/main.cpp)
 
 add_executable(main ${SOURCES})
 

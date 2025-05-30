@@ -17,6 +17,7 @@ class PokemonInfo{
 
 
     public:
+        PokemonInfo() = default;
         PokemonInfo(string tipo, string des, map<string, int> ataques, array<int, 3> experiencia);
 
         string getTipoPokemon();

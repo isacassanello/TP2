@@ -9,6 +9,7 @@ class Pokemon{
         int experiencia;
 
     public:
+        Pokemon() = default;
         Pokemon(const string& n, int e);
 
         // getters

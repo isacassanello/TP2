@@ -1,0 +1,3 @@
+/home/Udesa/Paradigmas/Trabajos/TP2/codigo/ejercicio1/build/CMakeFiles/main.dir
+/home/Udesa/Paradigmas/Trabajos/TP2/codigo/ejercicio1/build/CMakeFiles/edit_cache.dir
+/home/Udesa/Paradigmas/Trabajos/TP2/codigo/ejercicio1/build/CMakeFiles/rebuild_cache.dir

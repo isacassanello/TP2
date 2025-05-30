@@ -1,6 +1,6 @@
-#include "Pokemon.h"
-#include "PokemonInfo.h"
-#include "Pokedex.h"
+#include "../headers/Pokemon.h"
+#include "../headers/PokemonInfo.h"
+#include "../headers/Pokedex.h"
 
 int main(){
     Pokedex miPokedex;
