@@ -4,9 +4,15 @@ project(pokedex) # Nombre del proyecto
 
 set(CMAKE_CXX_STANDARD 17)
 
-file(GLOB SOURCES sources/* examples/main.cpp)
+file(GLOB SOURCES "sources/*.cpp" "examples/main.cpp")
 
 add_executable(main ${SOURCES})
+
+target_include_directories(main PUBLIC ${CMAKE_SOURCE_DIR}/headers)
+
+set_target_properties(main PROPERTIES
+RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
+)
 
 # Siguientes pasos:
 # 1- Crear el folder build y accederlo
