@@ -1,4 +1,4 @@
-#include "../headers/Pokemon.h"
+#include "../include/Pokemon.h"
 
 Pokemon::Pokemon(const std::string& n, int e) : nombre(n), experiencia(e) {}
 

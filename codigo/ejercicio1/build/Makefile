@@ -153,77 +153,77 @@ examples/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/examples/main.cpp.s
 .PHONY : examples/main.cpp.s
 
-sources/Pokedex.o: sources/Pokedex.cpp.o
-.PHONY : sources/Pokedex.o
+src/Pokedex.o: src/Pokedex.cpp.o
+.PHONY : src/Pokedex.o
 
 # target to build an object file
-sources/Pokedex.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/Pokedex.cpp.o
-.PHONY : sources/Pokedex.cpp.o
+src/Pokedex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pokedex.cpp.o
+.PHONY : src/Pokedex.cpp.o
 
-sources/Pokedex.i: sources/Pokedex.cpp.i
-.PHONY : sources/Pokedex.i
+src/Pokedex.i: src/Pokedex.cpp.i
+.PHONY : src/Pokedex.i
 
 # target to preprocess a source file
-sources/Pokedex.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/Pokedex.cpp.i
-.PHONY : sources/Pokedex.cpp.i
+src/Pokedex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pokedex.cpp.i
+.PHONY : src/Pokedex.cpp.i
 
-sources/Pokedex.s: sources/Pokedex.cpp.s
-.PHONY : sources/Pokedex.s
+src/Pokedex.s: src/Pokedex.cpp.s
+.PHONY : src/Pokedex.s
 
 # target to generate assembly for a file
-sources/Pokedex.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/Pokedex.cpp.s
-.PHONY : sources/Pokedex.cpp.s
+src/Pokedex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pokedex.cpp.s
+.PHONY : src/Pokedex.cpp.s
 
-sources/Pokemon.o: sources/Pokemon.cpp.o
-.PHONY : sources/Pokemon.o
+src/Pokemon.o: src/Pokemon.cpp.o
+.PHONY : src/Pokemon.o
 
 # target to build an object file
-sources/Pokemon.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/Pokemon.cpp.o
-.PHONY : sources/Pokemon.cpp.o
+src/Pokemon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pokemon.cpp.o
+.PHONY : src/Pokemon.cpp.o
 
-sources/Pokemon.i: sources/Pokemon.cpp.i
-.PHONY : sources/Pokemon.i
+src/Pokemon.i: src/Pokemon.cpp.i
+.PHONY : src/Pokemon.i
 
 # target to preprocess a source file
-sources/Pokemon.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/Pokemon.cpp.i
-.PHONY : sources/Pokemon.cpp.i
+src/Pokemon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pokemon.cpp.i
+.PHONY : src/Pokemon.cpp.i
 
-sources/Pokemon.s: sources/Pokemon.cpp.s
-.PHONY : sources/Pokemon.s
+src/Pokemon.s: src/Pokemon.cpp.s
+.PHONY : src/Pokemon.s
 
 # target to generate assembly for a file
-sources/Pokemon.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/Pokemon.cpp.s
-.PHONY : sources/Pokemon.cpp.s
+src/Pokemon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pokemon.cpp.s
+.PHONY : src/Pokemon.cpp.s
 
-sources/PokemonInfo.o: sources/PokemonInfo.cpp.o
-.PHONY : sources/PokemonInfo.o
+src/PokemonInfo.o: src/PokemonInfo.cpp.o
+.PHONY : src/PokemonInfo.o
 
 # target to build an object file
-sources/PokemonInfo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/PokemonInfo.cpp.o
-.PHONY : sources/PokemonInfo.cpp.o
+src/PokemonInfo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PokemonInfo.cpp.o
+.PHONY : src/PokemonInfo.cpp.o
 
-sources/PokemonInfo.i: sources/PokemonInfo.cpp.i
-.PHONY : sources/PokemonInfo.i
+src/PokemonInfo.i: src/PokemonInfo.cpp.i
+.PHONY : src/PokemonInfo.i
 
 # target to preprocess a source file
-sources/PokemonInfo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/PokemonInfo.cpp.i
-.PHONY : sources/PokemonInfo.cpp.i
+src/PokemonInfo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PokemonInfo.cpp.i
+.PHONY : src/PokemonInfo.cpp.i
 
-sources/PokemonInfo.s: sources/PokemonInfo.cpp.s
-.PHONY : sources/PokemonInfo.s
+src/PokemonInfo.s: src/PokemonInfo.cpp.s
+.PHONY : src/PokemonInfo.s
 
 # target to generate assembly for a file
-sources/PokemonInfo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/PokemonInfo.cpp.s
-.PHONY : sources/PokemonInfo.cpp.s
+src/PokemonInfo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PokemonInfo.cpp.s
+.PHONY : src/PokemonInfo.cpp.s
 
 # Help Target
 help:
@@ -237,15 +237,15 @@ help:
 	@echo "... examples/main.o"
 	@echo "... examples/main.i"
 	@echo "... examples/main.s"
-	@echo "... sources/Pokedex.o"
-	@echo "... sources/Pokedex.i"
-	@echo "... sources/Pokedex.s"
-	@echo "... sources/Pokemon.o"
-	@echo "... sources/Pokemon.i"
-	@echo "... sources/Pokemon.s"
-	@echo "... sources/PokemonInfo.o"
-	@echo "... sources/PokemonInfo.i"
-	@echo "... sources/PokemonInfo.s"
+	@echo "... src/Pokedex.o"
+	@echo "... src/Pokedex.i"
+	@echo "... src/Pokedex.s"
+	@echo "... src/Pokemon.o"
+	@echo "... src/Pokemon.i"
+	@echo "... src/Pokemon.s"
+	@echo "... src/PokemonInfo.o"
+	@echo "... src/PokemonInfo.i"
+	@echo "... src/PokemonInfo.s"
 .PHONY : help
 
 

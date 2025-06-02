@@ -86,69 +86,69 @@ CMakeFiles/main.dir/examples/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/examples/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/examples/main.cpp -o CMakeFiles/main.dir/examples/main.cpp.s
 
-CMakeFiles/main.dir/sources/Pokedex.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/sources/Pokedex.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/Pokedex.cpp
-CMakeFiles/main.dir/sources/Pokedex.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/sources/Pokedex.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/sources/Pokedex.cpp.o -MF CMakeFiles/main.dir/sources/Pokedex.cpp.o.d -o CMakeFiles/main.dir/sources/Pokedex.cpp.o -c /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/Pokedex.cpp
+CMakeFiles/main.dir/src/Pokedex.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Pokedex.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokedex.cpp
+CMakeFiles/main.dir/src/Pokedex.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Pokedex.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Pokedex.cpp.o -MF CMakeFiles/main.dir/src/Pokedex.cpp.o.d -o CMakeFiles/main.dir/src/Pokedex.cpp.o -c /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokedex.cpp
 
-CMakeFiles/main.dir/sources/Pokedex.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/sources/Pokedex.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/Pokedex.cpp > CMakeFiles/main.dir/sources/Pokedex.cpp.i
+CMakeFiles/main.dir/src/Pokedex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Pokedex.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokedex.cpp > CMakeFiles/main.dir/src/Pokedex.cpp.i
 
-CMakeFiles/main.dir/sources/Pokedex.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/sources/Pokedex.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/Pokedex.cpp -o CMakeFiles/main.dir/sources/Pokedex.cpp.s
+CMakeFiles/main.dir/src/Pokedex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Pokedex.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokedex.cpp -o CMakeFiles/main.dir/src/Pokedex.cpp.s
 
-CMakeFiles/main.dir/sources/Pokemon.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/sources/Pokemon.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/Pokemon.cpp
-CMakeFiles/main.dir/sources/Pokemon.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/sources/Pokemon.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/sources/Pokemon.cpp.o -MF CMakeFiles/main.dir/sources/Pokemon.cpp.o.d -o CMakeFiles/main.dir/sources/Pokemon.cpp.o -c /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/Pokemon.cpp
+CMakeFiles/main.dir/src/Pokemon.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Pokemon.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokemon.cpp
+CMakeFiles/main.dir/src/Pokemon.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/Pokemon.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Pokemon.cpp.o -MF CMakeFiles/main.dir/src/Pokemon.cpp.o.d -o CMakeFiles/main.dir/src/Pokemon.cpp.o -c /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokemon.cpp
 
-CMakeFiles/main.dir/sources/Pokemon.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/sources/Pokemon.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/Pokemon.cpp > CMakeFiles/main.dir/sources/Pokemon.cpp.i
+CMakeFiles/main.dir/src/Pokemon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Pokemon.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokemon.cpp > CMakeFiles/main.dir/src/Pokemon.cpp.i
 
-CMakeFiles/main.dir/sources/Pokemon.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/sources/Pokemon.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/Pokemon.cpp -o CMakeFiles/main.dir/sources/Pokemon.cpp.s
+CMakeFiles/main.dir/src/Pokemon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Pokemon.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokemon.cpp -o CMakeFiles/main.dir/src/Pokemon.cpp.s
 
-CMakeFiles/main.dir/sources/PokemonInfo.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/sources/PokemonInfo.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/PokemonInfo.cpp
-CMakeFiles/main.dir/sources/PokemonInfo.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/sources/PokemonInfo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/sources/PokemonInfo.cpp.o -MF CMakeFiles/main.dir/sources/PokemonInfo.cpp.o.d -o CMakeFiles/main.dir/sources/PokemonInfo.cpp.o -c /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/PokemonInfo.cpp
+CMakeFiles/main.dir/src/PokemonInfo.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/PokemonInfo.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/PokemonInfo.cpp
+CMakeFiles/main.dir/src/PokemonInfo.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/PokemonInfo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/PokemonInfo.cpp.o -MF CMakeFiles/main.dir/src/PokemonInfo.cpp.o.d -o CMakeFiles/main.dir/src/PokemonInfo.cpp.o -c /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/PokemonInfo.cpp
 
-CMakeFiles/main.dir/sources/PokemonInfo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/sources/PokemonInfo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/PokemonInfo.cpp > CMakeFiles/main.dir/sources/PokemonInfo.cpp.i
+CMakeFiles/main.dir/src/PokemonInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/PokemonInfo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/PokemonInfo.cpp > CMakeFiles/main.dir/src/PokemonInfo.cpp.i
 
-CMakeFiles/main.dir/sources/PokemonInfo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/sources/PokemonInfo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/sources/PokemonInfo.cpp -o CMakeFiles/main.dir/sources/PokemonInfo.cpp.s
+CMakeFiles/main.dir/src/PokemonInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/PokemonInfo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/PokemonInfo.cpp -o CMakeFiles/main.dir/src/PokemonInfo.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/examples/main.cpp.o" \
-"CMakeFiles/main.dir/sources/Pokedex.cpp.o" \
-"CMakeFiles/main.dir/sources/Pokemon.cpp.o" \
-"CMakeFiles/main.dir/sources/PokemonInfo.cpp.o"
+"CMakeFiles/main.dir/src/Pokedex.cpp.o" \
+"CMakeFiles/main.dir/src/Pokemon.cpp.o" \
+"CMakeFiles/main.dir/src/PokemonInfo.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main: CMakeFiles/main.dir/examples/main.cpp.o
-main: CMakeFiles/main.dir/sources/Pokedex.cpp.o
-main: CMakeFiles/main.dir/sources/Pokemon.cpp.o
-main: CMakeFiles/main.dir/sources/PokemonInfo.cpp.o
-main: CMakeFiles/main.dir/build.make
-main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
+bin/main: CMakeFiles/main.dir/examples/main.cpp.o
+bin/main: CMakeFiles/main.dir/src/Pokedex.cpp.o
+bin/main: CMakeFiles/main.dir/src/Pokemon.cpp.o
+bin/main: CMakeFiles/main.dir/src/PokemonInfo.cpp.o
+bin/main: CMakeFiles/main.dir/build.make
+bin/main: CMakeFiles/main.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/main.dir/build: main
+CMakeFiles/main.dir/build: bin/main
 .PHONY : CMakeFiles/main.dir/build
 
 CMakeFiles/main.dir/clean:
