@@ -22,6 +22,7 @@ de forma única y reproducible. Es decir: si le pasás "Pikachu", siempre va a d
 class Pokedex{
     private:
         unordered_map<Pokemon, PokemonInfo, PokemonHash> pokedex;
+        string nombreArchivo;
     
     public:
         Pokedex() = default;
@@ -29,12 +30,14 @@ class Pokedex{
         // metodo para agregar un pokemon al pokedex
         void agregarPokemon(const Pokemon& p, const PokemonInfo& info);
 
+        Pokedex(const string& archivo); // nuevo
+
         void mostrarTodos();
         
         void mostrar(const Pokemon& p);
 
-        void serializar(ofstream& out);
-        void deserializar(ifstream& in);
+        void serializar() const;
+        void deserializar();
 
         ~Pokedex() = default;
 };

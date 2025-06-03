@@ -3,7 +3,14 @@
 #include "../include/Pokedex.h"
 
 int main(){
-    Pokedex miPokedex;
+    cout << "\n -------------------------------------------------" << endl;
+    
+    // El nombre del archivo debe ser pasado al constructor sobrecargado.
+    Pokedex miPokedex("pokedex_data.bin");
+
+    // muestro los datos cargados desde archivo
+    cout << "\n====== Pokedex cargado desde archivo ======" << endl;
+    miPokedex.mostrarTodos();
 
     // caso 1
     Pokemon squirtle("Squirtle", 100);
@@ -26,14 +33,19 @@ int main(){
     // caso 4 para probar funcion mostrar()
     Pokemon pikachu("Pikachu", 390); 
 
+    // agregar los 3 pokemons (si ya estan, los pisa y reserializa todo)
     miPokedex.agregarPokemon(squirtle, infoSquirtle);
     miPokedex.agregarPokemon(bulbasaur, infoBulbasaur);
     miPokedex.agregarPokemon(charmander, infoCharmander);
 
+    cout << "\n====== Pokedex luego de agregar los Pokemon ======" << endl;
     miPokedex.mostrarTodos();
 
+    cout << "\n====== Busqueda individual ======" << endl;
     miPokedex.mostrar(squirtle);
     miPokedex.mostrar(pikachu);
+
+    cout << "\n -------------------------------------------------" << endl;
 
     return 0;
 }

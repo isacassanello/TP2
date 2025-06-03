@@ -22,7 +22,7 @@ class Pokemon{
 
         void imprimirPokemon();
 
-        void serializar(ofstream& out);
+        void serializar(ofstream& out) const;
         void deserializar(ifstream& in);
 
         ~Pokemon() = default;

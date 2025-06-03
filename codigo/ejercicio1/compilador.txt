@@ -1,0 +1,4 @@
+Paso 1 -> cd codigo/ejercicio1/build
+Paso 2 -> cmake ..
+Paso 3 -> make
+Paso 4 -> ./bin/main
