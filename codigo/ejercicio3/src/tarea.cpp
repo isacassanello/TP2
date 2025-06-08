@@ -28,7 +28,7 @@ queue<Tarea> tareasCompartidas;
 mutex mutexCola; //protege el acceso a la cola (para que dos threads no accedan a la cola al mismo tiempo)
 mutex mutexCout; //para que los threads no escriban al mismo tiempo y no se mezclen los msj
 atomic<int> sensoresActivos =0; //indica cuantos sensores estan activos - (atomic hace que no pueda ser interrumpida por otros threads)
-int idTareasTotales = 0; //contador de cuantas tareas fueron creadas 
+atomic<int> idTareasTotales = 0; //contador de cuantas tareas fueron creadas  -- el atomic para q dos sensores no lo lean y escriban al mismo tiempo
 
 
 
@@ -46,7 +46,7 @@ void crearTarea(int idSensor){
     }
     {
         lock_guard<mutex> lock(mutexCout); 
-        cout << "El sensor " << idSensor << " ,genero la tarea " << tarea.getIdTarea() << ": "<< tarea.getDescripcion();
+        cout << "El sensor " << idSensor << " ,genero la tarea " << tarea.getIdTarea() << ": "<< tarea.getDescripcion() << endl;
     }
 }
 
@@ -58,7 +58,7 @@ void sensor(int idSensor, int cantidadTareas){ //cada sensor crea n tareas llama
 }
 
 void robot(int idRobot){
-    while (true) //robot funcionar hasta que ya no queden tareas por hacer 
+    while (true){ //robot funcionar hasta que ya no queden tareas por hacer 
     Tarea tarea;
     bool tareaObtenida = false; //saber si se logro sacar una tarea de la cola 
 
@@ -80,6 +80,7 @@ void robot(int idRobot){
             cout << "El robot con id " << idRobot << " esta procesando la tarea " << tarea.getIdTarea() << " del sensor " << tarea.getIdSensor() << " : " << tarea.getDescripcion() << endl;
         }
     }
+    }
     {
         lock_guard<mutex> lock(mutexCout);
         cout << "El Robot " << idRobot << "Finalizo su trabajo" << endl;
@@ -90,6 +91,13 @@ void robot(int idRobot){
 
 //========================= MAIN ======================= 
 int main(){ 
+    const int numeroSensores = 3;
+    const int numeroRobots = 3; 
+    const int tareasSensor = 5 ; //ESTA BIEN HACERLO ASI?? tareas que hay x sensor
+
+    sensoresActivos = numeroSensores; 
+
+
     
 }
 
