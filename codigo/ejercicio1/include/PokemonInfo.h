@@ -3,7 +3,7 @@
 #include <string>
 #include <array>
 #include <map>
-#include "Pokemon.h"
+#include "pokemon.h"
 using namespace std;
 
 class PokemonInfo{

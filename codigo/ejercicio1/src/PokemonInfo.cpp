@@ -1,4 +1,4 @@
-#include "../include/PokemonInfo.h"
+#include "../include/pokemonInfo.h"
 
 PokemonInfo::PokemonInfo(string tipo, string des, map<string, int> ataques, array<int, 3> experiencia)
     : tipoPokemon(tipo), descripcion(des), ataquesDisponiblesPorNivel(ataques), experienciaProximoNivel(experiencia) {}

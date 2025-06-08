@@ -1,8 +1,8 @@
 #pragma once
 #include <unordered_map>
 #include <functional>
-#include "Pokemon.h"
-#include "PokemonInfo.h"
+#include "pokemon.h"
+#include "pokemonInfo.h"
 
 // hash asociado a Pokemon, usando solo el nombre
 struct PokemonHash {

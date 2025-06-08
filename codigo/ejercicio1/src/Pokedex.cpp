@@ -1,4 +1,4 @@
-#include "../include/Pokedex.h"
+#include "../include/pokedex.h"
 
 void Pokedex::agregarPokemon(const Pokemon& p, const PokemonInfo& info){
     pokedex[p] = info;

@@ -1,6 +1,6 @@
-#include "../include/Pokemon.h"
-#include "../include/PokemonInfo.h"
-#include "../include/Pokedex.h"
+#include "../include/pokemon.h"
+#include "../include/pokemonInfo.h"
+#include "../include/pokedex.h"
 
 int main(){
     cout << "\n -------------------------------------------------" << endl;
