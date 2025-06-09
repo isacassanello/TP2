@@ -6,6 +6,7 @@
 #include <atomic>
 #include <string> 
 #include <vector>
+#include <condition_variable>
 using namespace std; 
 
 struct Tarea{
@@ -30,10 +31,10 @@ mutex mutexCout; // para que los threads no escriban al mismo tiempo y no se mez
 condition_variable cvTareas; // para que los robots espren si no hay tareas y todavia hay sensores activos
 
 atomic<int> sensoresActivos = 0; // indica cuantos sensores estan activos - (atomic hace que no pueda ser interrumpida por otros threads)
-atomic<int> idTareasTotales = 0; // contador de cuantas tareas fueron creadas  -- el atomic para q dos sensores no lo lean y escriban al mismo tiempo
+atomic<int> idTareasTotales = 0; // contador de cuantas tareas fueron creadas  - el atomic para q dos sensores no lo lean y escriban al mismo tiempo
+bool tareaObtenida = false; // para funcion robot -> saber si se logro sacar una tarea de la cola 
 
-
-
+// prodcutor
 void crearTarea(int idSensor){
     this_thread::sleep_for(chrono::milliseconds(175)); //espera 175ms para generar la tarea 
 
@@ -43,7 +44,7 @@ void crearTarea(int idSensor){
         lock_guard<mutex> lock(mutexCola);  //avisa al resto de sensores (threads) que solo esta trabajando el (el restp para)
         int idTarea = idTareasTotales++;  //cambia el id de la tarea  
         string descripcion = "Tarea " + to_string(idTarea) + " del sensor " + to_string(idSensor); //en la descripcion de la tarea tiene que estar su id actual
-        tarea = Tarea(idSensor,idTarea,descripcion);
+        tarea = Tarea(idSensor, idTarea, descripcion);
         tareasCompartidas.push(tarea);
     }
     {
@@ -62,19 +63,20 @@ void sensor(int idSensor, int cantidadTareas){ //cada sensor crea n tareas llama
     cvTareas.notify_all(); // avisar a los robots en caso de que esten esperando
 }
 
+// consumidor --> revisar esta funcion
 void robot(int idRobot){
-    while (true){ //robot funcionar hasta que ya no queden tareas por hacer 
+    while (true){ //robot funciona hasta que ya no queden tareas por hacer 
         Tarea tarea;
-        bool tareaObtenida = false; //saber si se logro sacar una tarea de la cola 
-
         {
             unique_lock<mutex> lock(mutexCola); // lo cambie porque use el condition_variable
-            // HAY QUE TERMINAR ESTA FUNCION
+            cvTareas.wait(lock, [] {return tareaObtenida; }); 
+
             if(!tareasCompartidas.empty()){
-                tarea = tareasCompartidas.front();  //NOO SE PORQUEEEE (XQ ESTA AFUERA DEL SCOPE??)
+                tarea = tareasCompartidas.front();  
                 tareasCompartidas.pop(); //saca la tarea si ya la use
                 tareaObtenida = true;
-            } else if (sensoresActivos == 0){ //COMO MANEJO CUANDO HAY SENSORES ACTIVOS PERO ESTA TEMPRALMENTE VACIA 
+                lock.unlock();
+            } else if (sensoresActivos == 0){ 
                 break;
             }
         }
@@ -101,7 +103,7 @@ int main(){
     // test de 3 sensores x 5 tareas c/u y 3 robots
     const int numeroSensores = 3;
     const int numeroRobots = 3; 
-    const int tareasSensor = 5 ; 
+    const int tareasSensor = 5; 
 
     sensoresActivos = numeroSensores; 
 
