@@ -94,10 +94,9 @@ void robot(int idRobot){
     
 }
 
-
 //========================= MAIN ======================= 
 int main(){ 
-    cout << "\n------------------------------------" << endl;
+    cout << "\n------------------------------------------------------------------" << endl;
     // test de 3 sensores x 9 tareas c/u y 3 robots
     const int numSensores = 3;
     const int numRobots = 3; 
@@ -122,7 +121,7 @@ int main(){
         cout << "Todos los sensores y robots terminaron correctamente" << endl;
     }
 
-    cout << "-----------------------------------------------------------------------------\n" << endl;
+    cout << "------------------------------------------------------------------\n" << endl;
 
     return 0;
 }
