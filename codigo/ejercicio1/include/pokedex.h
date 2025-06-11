@@ -4,7 +4,6 @@
 #include "pokemon.h"
 #include "pokemonInfo.h"
 
-// holaaaaaaaaaaa
 
 // hash asociado a Pokemon, usando solo el nombre
 struct PokemonHash {
