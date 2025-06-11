@@ -4,6 +4,8 @@
 #include "pokemon.h"
 #include "pokemonInfo.h"
 
+// holaaaaaaaaaaa
+
 // hash asociado a Pokemon, usando solo el nombre
 struct PokemonHash {
     size_t operator()(const Pokemon& p) const {
