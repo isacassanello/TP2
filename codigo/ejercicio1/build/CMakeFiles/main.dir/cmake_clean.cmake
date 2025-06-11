@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/examples/main.cpp.o"
   "CMakeFiles/main.dir/examples/main.cpp.o.d"
-  "CMakeFiles/main.dir/src/Pokedex.cpp.o"
-  "CMakeFiles/main.dir/src/Pokedex.cpp.o.d"
-  "CMakeFiles/main.dir/src/Pokemon.cpp.o"
-  "CMakeFiles/main.dir/src/Pokemon.cpp.o.d"
-  "CMakeFiles/main.dir/src/PokemonInfo.cpp.o"
-  "CMakeFiles/main.dir/src/PokemonInfo.cpp.o.d"
+  "CMakeFiles/main.dir/src/pokedex.cpp.o"
+  "CMakeFiles/main.dir/src/pokedex.cpp.o.d"
+  "CMakeFiles/main.dir/src/pokemon.cpp.o"
+  "CMakeFiles/main.dir/src/pokemon.cpp.o.d"
+  "CMakeFiles/main.dir/src/pokemonInfo.cpp.o"
+  "CMakeFiles/main.dir/src/pokemonInfo.cpp.o.d"
   "bin/main"
   "bin/main.pdb"
 )

@@ -1,6 +1,6 @@
-CMakeFiles/main.dir/src/Pokemon.cpp.o: \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokemon.cpp \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/../include/Pokemon.h \
+CMakeFiles/main.dir/src/pokemon.cpp.o: \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokemon.cpp \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/../include/pokemon.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \

@@ -9,9 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/examples/main.cpp" "CMakeFiles/main.dir/examples/main.cpp.o" "gcc" "CMakeFiles/main.dir/examples/main.cpp.o.d"
-  "/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokedex.cpp" "CMakeFiles/main.dir/src/Pokedex.cpp.o" "gcc" "CMakeFiles/main.dir/src/Pokedex.cpp.o.d"
-  "/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokemon.cpp" "CMakeFiles/main.dir/src/Pokemon.cpp.o" "gcc" "CMakeFiles/main.dir/src/Pokemon.cpp.o.d"
-  "/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/PokemonInfo.cpp" "CMakeFiles/main.dir/src/PokemonInfo.cpp.o" "gcc" "CMakeFiles/main.dir/src/PokemonInfo.cpp.o.d"
+  "/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokedex.cpp" "CMakeFiles/main.dir/src/pokedex.cpp.o" "gcc" "CMakeFiles/main.dir/src/pokedex.cpp.o.d"
+  "/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokemon.cpp" "CMakeFiles/main.dir/src/pokemon.cpp.o" "gcc" "CMakeFiles/main.dir/src/pokemon.cpp.o.d"
+  "/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokemonInfo.cpp" "CMakeFiles/main.dir/src/pokemonInfo.cpp.o" "gcc" "CMakeFiles/main.dir/src/pokemonInfo.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

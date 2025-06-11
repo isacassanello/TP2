@@ -55,7 +55,7 @@ void Pokedex::serializar() const{
     for (const auto& [poke, info] : pokedex) {
         poke.serializar(out); // guarda nombre y experiencia del Pokemon
         info.serializar(out); // guarda tipo, descripcion, ataques y experiencia por nivel
-    }
+    } 
     out.close();
 }
 

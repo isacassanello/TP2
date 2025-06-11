@@ -899,13 +899,13 @@ CMakeFiles/main.dir/examples/main.cpp.o: /Users/isacassanello/Desktop/segundo/cu
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/Pokedex.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/Pokemon.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/PokemonInfo.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/Pokemon.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/PokemonInfo.h
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokedex.h \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemon.h \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemonInfo.h \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemon.h \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemonInfo.h
 
-CMakeFiles/main.dir/src/Pokedex.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokedex.cpp \
+CMakeFiles/main.dir/src/pokedex.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokedex.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -1803,11 +1803,11 @@ CMakeFiles/main.dir/src/Pokedex.cpp.o: /Users/isacassanello/Desktop/segundo/cuat
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/Pokemon.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/PokemonInfo.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/Pokedex.h
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemon.h \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemonInfo.h \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokedex.h
 
-CMakeFiles/main.dir/src/Pokemon.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokemon.cpp \
+CMakeFiles/main.dir/src/pokemon.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokemon.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -2651,9 +2651,9 @@ CMakeFiles/main.dir/src/Pokemon.cpp.o: /Users/isacassanello/Desktop/segundo/cuat
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/Pokemon.h
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemon.h
 
-CMakeFiles/main.dir/src/PokemonInfo.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/PokemonInfo.cpp \
+CMakeFiles/main.dir/src/pokemonInfo.cpp.o: /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokemonInfo.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -3551,17 +3551,17 @@ CMakeFiles/main.dir/src/PokemonInfo.cpp.o: /Users/isacassanello/Desktop/segundo/
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/Pokemon.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/PokemonInfo.h
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemon.h \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemonInfo.h
 
 
-/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokemon.cpp:
+/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokemonInfo.cpp:
 
-/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokedex.cpp:
+/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokemon.cpp:
 
-/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/PokemonInfo.h:
+/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokedex.cpp:
 
-/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/Pokemon.h:
+/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokedex.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h:
 
@@ -3785,11 +3785,15 @@ CMakeFiles/main.dir/src/PokemonInfo.cpp.o: /Users/isacassanello/Desktop/segundo/
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional:
 
+/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemonInfo.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream:
+
+/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemon.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution:
 
@@ -4393,8 +4397,6 @@ CMakeFiles/main.dir/src/PokemonInfo.cpp.o: /Users/isacassanello/Desktop/segundo/
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind_back.h:
 
-/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/PokemonInfo.cpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/unary_function.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind_front.h:
@@ -4694,8 +4696,6 @@ CMakeFiles/main.dir/src/PokemonInfo.cpp.o: /Users/isacassanello/Desktop/segundo/
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
-
-/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/Pokedex.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h:
 

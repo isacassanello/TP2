@@ -1,6 +1,6 @@
-CMakeFiles/main.dir/src/PokemonInfo.cpp.o: \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/PokemonInfo.cpp \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/../include/PokemonInfo.h \
+CMakeFiles/main.dir/src/pokemonInfo.cpp.o: \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokemonInfo.cpp \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/../include/pokemonInfo.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
@@ -878,7 +878,7 @@ CMakeFiles/main.dir/src/PokemonInfo.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/Pokemon.h \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemon.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \

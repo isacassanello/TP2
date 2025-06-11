@@ -1,6 +1,6 @@
-CMakeFiles/main.dir/src/Pokedex.cpp.o: \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/Pokedex.cpp \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/../include/Pokedex.h \
+CMakeFiles/main.dir/src/pokedex.cpp.o: \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/pokedex.cpp \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/src/../include/pokedex.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_permutation.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -872,7 +872,7 @@ CMakeFiles/main.dir/src/Pokedex.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/Pokemon.h \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemon.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
@@ -897,6 +897,6 @@ CMakeFiles/main.dir/src/Pokedex.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/PokemonInfo.h \
+  /Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1/include/pokemonInfo.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree
