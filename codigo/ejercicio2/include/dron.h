@@ -2,6 +2,7 @@
 #include <iostream>
 #include <thread>
 #include <mutex>
+#include <vector>
 #include <chrono>
 using namespace std;
 

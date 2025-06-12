@@ -24,13 +24,13 @@ void Dron::operator()(){
 
     {
         lock_guard<mutex> lock_cout(mutex_cout);
-        cout << "Dron" << id << " despegando..." << endl;  
+        cout << "Dron " << id << " despegando..." << endl;  
     }
 
     this_thread::sleep_for(chrono::seconds(5));
 
     {
         lock_guard<mutex> lock_cout(mutex_cout);
-        cout << "Dron" << id << " alcanzo altura de 10m" << endl;  
+        cout << "Dron " << id << " alcanzo altura de 10m" << endl;  
     }
 }
