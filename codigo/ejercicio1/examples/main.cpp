@@ -5,12 +5,15 @@
 int main(){
     cout << "\n -------------------------------------------------" << endl;
     
-    // El nombre del archivo debe ser pasado al constructor sobrecargado.
+    // se crea un objeto Pokedex asociado a un archivo binario llamado "pokedex_data.bin"
+    // este constructor sobrecargado intenta cargar los datos previamente guardados (deserializacion)
     Pokedex miPokedex("pokedex_data.bin");
 
     // muestro los datos cargados desde archivo
     cout << "\n====== Pokedex cargado desde archivo ======" << endl;
     miPokedex.mostrarTodos();
+
+    // ---------------- Creacion de Pokemon y su informacion asociada ----------------
 
     // caso 1
     Pokemon squirtle("Squirtle", 100);
@@ -30,7 +33,7 @@ int main(){
                 {{"Ascuas", 4}, {"Lanzallamas", 6}, {"Giro Fuego", 5}}, 
                 {0, 250, 1300});
 
-    // caso 4 para probar funcion mostrar()
+    // caso 4: Pikachu no fue agregado al pokedex, se usa para probar busqueda fallida con la funcion mostrar()
     Pokemon pikachu("Pikachu", 390); 
 
     // agregar los 3 pokemons (si ya estan, los pisa y reserializa todo)

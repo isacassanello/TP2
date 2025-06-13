@@ -10,23 +10,21 @@ class Pokemon{
         int experiencia;
 
     public:
-        Pokemon() = default;
-        Pokemon(const string& n, int e);
+        Pokemon() = default;               
+        Pokemon(const string& n, int e);        
 
-        // getters
+        // metodos getter para acceder a los atributos privados desde fuera de la clase
         string getNombre() const;
         int getExperiencia()const;
 
-        // Sobrecarga para comparar en unordered_map
+        // sobrecarga para comparar en unordered_map -> comparacion de dos Pokemon por su nombre y experiencia
         bool operator==(const Pokemon& other) const;
 
         void imprimirPokemon();
 
+        // metodos para guardar (serializar) o leer (deserializar) los datos del Pokemon en/desde un archivo binario
         void serializar(ofstream& out) const;
         void deserializar(ifstream& in);
 
         ~Pokemon() = default;
 };
-
-// Cuando usás un std::unordered_map, el compilador necesita una función hash para calcular en qué casillero de la tabla colocar cada clave.
-// entonces necesitás #include <functional> porque std::hash está definido ahí.

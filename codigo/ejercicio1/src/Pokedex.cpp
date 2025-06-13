@@ -11,13 +11,14 @@ void Pokedex::agregarPokemon(const Pokemon& p, const PokemonInfo& info){
     }
 }
 
-// al crear el Pokedex con un archivo asociado, automaticamente se cargan los datos del archivo
+// al crear el pokedex con un archivo asociado, automaticamente se cargan los datos del archivo
 Pokedex::Pokedex(const string& archivo)
     : nombreArchivo(archivo) {
     ifstream in(nombreArchivo, ios::binary);
     deserializar();
 }
 
+// imprime todos los Pokemon y su informacion
 void Pokedex::mostrarTodos(){
     if (pokedex.empty()) {
         cout << "El pokedex esta vacio" << endl;
@@ -30,6 +31,7 @@ void Pokedex::mostrarTodos(){
     }
 }
 
+// busca un Pokemon especifico y lo imprime
 void Pokedex::mostrar(const Pokemon& p){
     auto aBuscar = pokedex.find(p);
     if (aBuscar != pokedex.end()){
@@ -47,7 +49,7 @@ void Pokedex::mostrar(const Pokemon& p){
 void Pokedex::serializar() const{
     ofstream out(nombreArchivo, ios::binary);
 
-    // guarda cuantos elementos tiene el pokedex, para saber cuantos leer al deserializar
+    // guarda cuantos elementos tiene la pokedex, para saber cuantos leer al deserializar
     size_t cantidad = pokedex.size();
     out.write(reinterpret_cast<char*>(&cantidad), sizeof(cantidad));
     
