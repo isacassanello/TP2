@@ -9,6 +9,7 @@
 #include <condition_variable>
 using namespace std; 
 
+//Estructura que respresenta una tarea generada por un sensor
 struct Tarea{
     private: 
         int idSensor; 
@@ -19,64 +20,66 @@ struct Tarea{
         Tarea() = default;
         Tarea(int idSensor, int idTarea, const string& descripcionTarea) : idSensor(idSensor), idTarea(idTarea) , descripcionTarea(descripcionTarea) {}
 
-        // void imprimir() const {cout << descripcionTarea << endl;}
         int getIdSensor() const {return idSensor;}
         int getIdTarea() const {return idTarea;}
         string getDescripcion() const {return descripcionTarea;}
 };
 
 queue<Tarea> tareasCompartidas;
-mutex mutexCola; // protege el acceso a la cola (para que dos threads no accedan a la cola al mismo tiempo)
-mutex mutexCout; // para que los threads no escriban al mismo tiempo y no se mezclen los msj
-condition_variable cvTareas; // para que los robots espren si no hay tareas y todavia hay sensores activos
+mutex mutexCola; // protege el acceso a la cola
+mutex mutexCout; // mutex para evitar superposicion de mensajes por consola
+condition_variable cvTareas; // variable de condicion par notificar a los robots cuando hay nuevas tareas
 
-atomic<int> sensoresActivos = 0; // indica cuantos sensores estan activos - (atomic hace que no pueda ser interrumpida por otros threads)
-atomic<int> idTareasTotales = 0; // contador de cuantas tareas fueron creadas  - el atomic para q dos sensores no lo lean y escriban al mismo tiempo
+atomic<int> sensoresActivos = 0; // contador que indica la cantidad de sensores activos
+atomic<int> idTareasTotales = 0; // contador de tareas generadas
 
-// prodcutor
+//funcion que crea una tarea y la agrega a la cola compartida 
 void crearTarea(int idSensor){
     this_thread::sleep_for(chrono::milliseconds(175)); //espera 175ms para generar la tarea 
 
     Tarea tarea;
-    //scope nuevo
     {  
-        lock_guard<mutex> lock(mutexCola);  //avisa al resto de sensores (threads) que solo esta trabajando el (el restp para)
-        int idTarea = idTareasTotales++;  //cambia el id de la tarea  
-        string descripcion = "Tarea " + to_string(idTarea); //en la descripcion de la tarea tiene que estar su id actual
+        lock_guard<mutex> lock(mutexCola);  //bloqueo el acceso a la cola para que evitar un race condition
+        int idTarea = idTareasTotales++;  // asigna una id unico a la tarea
+        string descripcion = "Tarea " + to_string(idTarea); 
         tarea = Tarea(idSensor, idTarea, descripcion);
         tareasCompartidas.push(tarea);
     }
     {
-        lock_guard<mutex> lock(mutexCout); 
+        lock_guard<mutex> lock(mutexCout); //bloqueo para que no se superpongan los cout
         cout << "El sensor " << idSensor << ", genero: " << tarea.getDescripcion() << endl;
     }
 
-    cvTareas.notify_all(); // notificar a robots que hay una nueva tarea
+    cvTareas.notify_all(); // notifica a los robots que hay una nueva tarea
 }
 
-void sensor(int idSensor, int cantidadTareas){ //cada sensor crea n tareas llamando a creartarea()
+
+//cada sensor crea una cantidad fija de tareas 
+void sensor(int idSensor, int cantidadTareas){ 
     for (int i = 0; i < cantidadTareas; i++){
         crearTarea(idSensor);
     }
-    --sensoresActivos;
-    cvTareas.notify_all(); // avisar a los robots en caso de que esten esperando
+    --sensoresActivos; //informa que este sensor termino
+    cvTareas.notify_all(); // notifica por si hay robots esperando
 }
 
-// consumidor --> revisar esta funcion
+//funcion ejecutada por cada robot para procesar tareas de la cola
 void robot(int idRobot){
-    while (true){ //robot funciona hasta que ya no queden tareas por hacer 
+    while (true){  
         Tarea tarea;
         {
-            unique_lock<mutex> lock(mutexCola); // lo cambie porque use el condition_variable
+            //uso variable condicional  para controlar cuando terminan de trabajar todas las tareas
+            unique_lock<mutex> lock(mutexCola); 
+            //espera mientras no haya tareas, salvo que no haya sensores activos
             cvTareas.wait(lock, [] {return !tareasCompartidas.empty() || sensoresActivos == 0;}); 
 
             if (tareasCompartidas.empty()){
-                if (sensoresActivos == 0) break;
+                if (sensoresActivos == 0) break; //si no hay tareas ni sensores activos, termina
                 else continue;
             }
 
             tarea = tareasCompartidas.front();  
-            tareasCompartidas.pop(); //saca la tarea si ya la use
+            tareasCompartidas.pop(); 
         }
 
         {
@@ -84,7 +87,7 @@ void robot(int idRobot){
             cout << "El robot con id " << idRobot << " esta procesando: " << tarea.getDescripcion() << " creada por el sensor " << tarea.getIdSensor() << endl;
         }
 
-        this_thread::sleep_for(chrono::milliseconds(250)); //El procesamiento de cada tarea por parte de un robot debe tomar 250 ms.
+        this_thread::sleep_for(chrono::milliseconds(250)); // simula el tiempo de procesamiento
     }
 
     {
@@ -94,17 +97,16 @@ void robot(int idRobot){
     
 }
 
-//========================= MAIN ======================= 
 int main(){ 
     cout << "\n------------------------------------------------------------------" << endl;
-    // test de 3 sensores x 9 tareas c/u y 3 robots
     const int numSensores = 3;
     const int numRobots = 3; 
     const int tareasSensor = 9; 
 
     sensoresActivos = numSensores; 
-    vector<thread> hilosSensores, hilosRobots;
+    vector<thread> hilosSensores, hilosRobots;  
 
+    //guardo todos los threads en los vectores de arriba para despues poder usar el join
     for (int i = 1; i <= numSensores; i++){
         hilosSensores.push_back(thread(sensor, i, tareasSensor));
     }
@@ -113,7 +115,9 @@ int main(){
         hilosRobots.push_back(thread(robot, i)); 
     }
 
+    //espera a que todos los sensores terminen
     for (auto& t : hilosSensores) t.join(); 
+    //espera a que todos los robots terminen
     for (auto& t : hilosRobots) t.join();
 
     {
