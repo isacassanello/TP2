@@ -30,10 +30,10 @@ class Pokedex{
         Pokedex(const string& archivo); 
 
         // imprime todos los Pokemon cargados en la pokedex, recorriendo el unordered_map
-        void mostrarTodos();
+        void mostrarTodos() const;
         
         // muestra la informacion de un Pokemon especifico si este en la pokedex
-        void mostrar(const Pokemon& p);
+        void mostrar(const Pokemon& p) const;
 
         // serializa (guarda) y deserializa (carga) la pokedex entera en un archivo binario
         // esto permite que al reiniciar el programa se recupere el estado anterior

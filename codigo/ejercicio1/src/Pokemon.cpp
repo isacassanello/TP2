@@ -1,16 +1,16 @@
 #include "../include/pokemon.h"
 
-Pokemon::Pokemon(const std::string& n, int e) : nombre(n), experiencia(e) {}
+Pokemon::Pokemon(const string& n, unsigned int e) : nombre(n), experiencia(e) {}
 
-string Pokemon::getNombre() const { return nombre; }
+string Pokemon::getNombre() const{ return nombre; }
 
-int Pokemon::getExperiencia() const { return experiencia; }
+unsigned int Pokemon::getExperiencia() const{ return experiencia; }
 
-bool Pokemon::operator==(const Pokemon& other) const {
+bool Pokemon::operator==(const Pokemon& other) const{
     return nombre == other.nombre; // solo comparamos por nombre 
 }
 
-void Pokemon::imprimirPokemon() {
+void Pokemon::imprimirPokemon() const{
     cout << "Nombre: " << nombre << ", Experiencia: " << experiencia;
 }
 

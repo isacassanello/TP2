@@ -3,5 +3,11 @@
         {
             "path": "codigo"
         }
-    ]
+    ],
+    "settings": {
+        "files.associations": {
+            "array": "cpp",
+            "map": "cpp"
+        }
+    }
 }

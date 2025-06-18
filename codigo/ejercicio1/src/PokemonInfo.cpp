@@ -1,18 +1,18 @@
 #include "../include/pokemonInfo.h"
 
-PokemonInfo::PokemonInfo(string tipo, string des, map<string, int> ataques, array<int, 3> experiencia)
+PokemonInfo::PokemonInfo (const string& tipo, const string& des, const map<string, unsigned int>& ataques, const array<unsigned int, 3>& experiencia)
     : tipoPokemon(tipo), descripcion(des), ataquesDisponiblesPorNivel(ataques), experienciaProximoNivel(experiencia) {}
 
-string PokemonInfo::getTipoPokemon() { return tipoPokemon; }
+string PokemonInfo::getTipoPokemon() const{ return tipoPokemon; }
 
-string PokemonInfo::getDescripcion() { return descripcion; }
+string PokemonInfo::getDescripcion() const{ return descripcion; }
 
-map<string, int> PokemonInfo::getAtaques() { return ataquesDisponiblesPorNivel; }
+map<string, unsigned int> PokemonInfo::getAtaques() const{ return ataquesDisponiblesPorNivel; }
 
-array<int, 3> PokemonInfo::getExperiencia() { return experienciaProximoNivel; }
+array<unsigned int, 3> PokemonInfo::getExperiencia() const{ return experienciaProximoNivel; }
 
 // imprime toda la informacion del Pokemon (tipo, ataques, experiencia por nivel)
-void PokemonInfo::imprimirPokemonInfo(const string& nombrePokemon, int experiencia){
+void PokemonInfo::imprimirPokemonInfo(const string& nombrePokemon, unsigned int experiencia) const{
     cout << "Nombre: " << nombrePokemon << endl;
     cout << "Experiencia: " << experiencia << endl;
     cout << "Tipo: " << tipoPokemon << endl;
@@ -96,7 +96,7 @@ void PokemonInfo::deserializar(ifstream& in) {
     }
 
     // lee el array de experiencia por nivel 
-    for (int& exp : experienciaProximoNivel) {
+    for (unsigned int& exp : experienciaProximoNivel) {
         in.read(reinterpret_cast<char*>(&exp), sizeof(exp));
     }
 }

@@ -19,7 +19,7 @@ Pokedex::Pokedex(const string& archivo)
 }
 
 // imprime todos los Pokemon y su informacion
-void Pokedex::mostrarTodos(){
+void Pokedex::mostrarTodos() const{
     if (pokedex.empty()) {
         cout << "El pokedex esta vacio" << endl;
     }
@@ -32,7 +32,7 @@ void Pokedex::mostrarTodos(){
 }
 
 // busca un Pokemon especifico y lo imprime
-void Pokedex::mostrar(const Pokemon& p){
+void Pokedex::mostrar(const Pokemon& p) const{
     auto aBuscar = pokedex.find(p);
     if (aBuscar != pokedex.end()){
         cout << "\n------------------------" << endl;
