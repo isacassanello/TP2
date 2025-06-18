@@ -6,15 +6,13 @@
 #include <chrono>
 using namespace std;
 
-
-
-extern mutex mutex_cout; // se utiliza mutex para que no se superpongan los mensajes
+mutex mutex_cout; // se utiliza mutex para que no se superpongan los mensajes
 
 class Dron{
     private:
         int id;
 
-        //las zonas las hago referencias para que todas los drones vean que se bloqueo
+        // las zonas las hago referencias para que todas los drones vean que se bloqueo
         mutex& zona_izq;
         mutex& zona_der;
 
@@ -22,7 +20,7 @@ class Dron{
         Dron();
         Dron(int id, mutex& izq, mutex& der);
 
-        // Functor, permite que una instancia de dron se ejecute como un hilo
+        // functor, permite que una instancia de dron se ejecute como un hilo
         void operator()();
 
         ~Dron() = default;
