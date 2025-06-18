@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "map": "cpp",
-        "unordered_map": "cpp",
-        "functional": "cpp"
-    },
-    "cmake.sourceDirectory": "/Users/isacassanello/Desktop/segundo/cuatri-1/paradigmas/tps/TP2/codigo/ejercicio1"
-}

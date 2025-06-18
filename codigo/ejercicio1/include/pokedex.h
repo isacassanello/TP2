@@ -12,16 +12,6 @@ struct PokemonHash {
     }
 };
 
-/*
-ESTO METERLO EN EL INFORME
-
-hash<string>:
-Es un "functor" que sabe cómo transformar un std::string en un número entero (size_t) 
-de forma única y reproducible. Es decir: si le pasás "Pikachu", siempre va a devolver el mismo número hash.
-
-"Usá la función hash estándar para strings y aplicala al nombre del Pokémon".
-*/
-
 class Pokedex{
     private:
         // contenedor principal -> asocia un Pokemon (clave) con su PokemonInfo (valor)

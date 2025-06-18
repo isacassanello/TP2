@@ -1,19 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"files.associations": {
-			"unordered_map": "cpp",
-			"ios": "cpp",
-			"iostream": "cpp",
-			"vector": "cpp",
-			"queue": "cpp",
-			"__locale": "cpp",
-			"locale": "cpp",
-			"ostream": "cpp"
-		}
-	}
+    "folders": [
+        {
+            "path": "codigo"
+        }
+    ]
 }
