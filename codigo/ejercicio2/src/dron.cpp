@@ -5,7 +5,7 @@ static mutex default_mutex_izq;
 static mutex default_mutex_der;
 Dron::Dron() : id(0), zona_izq(default_mutex_izq), zona_der(default_mutex_der) {}
 
-Dron::Dron(int id, mutex& izq, mutex& der) : id(id), zona_izq(izq), zona_der(der) {}
+Dron::Dron(unsigned int id, mutex& izq, mutex& der) : id(id), zona_izq(izq), zona_der(der) {}
 
 void Dron::operator()(){
     {

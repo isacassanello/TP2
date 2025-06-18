@@ -10,7 +10,7 @@ mutex mutex_cout; // se utiliza mutex para que no se superpongan los mensajes
 
 class Dron{
     private:
-        int id;
+        unsigned int id;
 
         // las zonas las hago referencias para que todas los drones vean que se bloqueo
         mutex& zona_izq;
@@ -18,7 +18,7 @@ class Dron{
 
     public:
         Dron();
-        Dron(int id, mutex& izq, mutex& der);
+        Dron(unsigned int id, mutex& izq, mutex& der);
 
         // functor, permite que una instancia de dron se ejecute como un hilo
         void operator()();
