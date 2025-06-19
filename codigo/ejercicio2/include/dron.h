@@ -6,7 +6,7 @@
 #include <chrono>
 using namespace std;
 
-mutex mutex_cout; // se utiliza mutex para que no se superpongan los mensajes
+extern mutex mutex_cout; // se utiliza mutex para que no se superpongan los mensajes
 
 class Dron{
     private:

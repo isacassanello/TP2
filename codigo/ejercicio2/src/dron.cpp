@@ -1,5 +1,7 @@
 #include "../include/dron.h"
 
+ mutex mutex_cout;
+
 // mutex por defecto compartidos por los drones creados con el constructor por defecto
 static mutex default_mutex_izq;
 static mutex default_mutex_der;

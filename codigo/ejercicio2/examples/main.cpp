@@ -1,7 +1,5 @@
 #include "../include/dron.h"
 
-mutex mutex_cout;
-
 int main(){
     const int N = 5;
     vector<thread> drones; // vector para almacenar los hilos de cada dron 
